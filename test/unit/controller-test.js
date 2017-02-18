@@ -11,6 +11,6 @@ describe('Demo App Controller', function() {
     }));
 
     it("should add two numbers", function() {
-        expect($scope.add(10,5)).toBe(15);
+        expect($scope.add(10, 5)).toBe(15);
     });
 });

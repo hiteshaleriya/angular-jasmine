@@ -5,7 +5,7 @@ describe('Demo App Service', function() {
 
     beforeEach(module('demoApp'));
 
-    beforeEach(inject(function(AppService) {        //$injector.get('AppService')
+    beforeEach(inject(function(AppService) { //$injector.get('AppService')
         service = AppService;
     }));
 

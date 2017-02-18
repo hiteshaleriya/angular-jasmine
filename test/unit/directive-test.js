@@ -13,8 +13,8 @@ describe('Demo App Directive', function() {
     }));
 
     it("should show current date", function() {
-    	var today = new Date();
-    	var currentDate = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
+        var today = new Date();
+        var currentDate = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
 
         expect(element.html()).toContain(currentDate);
     });

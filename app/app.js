@@ -1,34 +1,34 @@
-angular.module('demoApp', ['ngRoute'])
-    
-    .controller('AppController', function($scope) {
-        $scope.add = function(a, b) {
-            return parseInt(a) + parseInt(b);
-        };
-    })
+angular.module('demoApp', [])
 
-	.service('AppService', function() {
-	    return [{
-	        "id": "1",
-	        "name": "Australia"
-	    }, {
-	        "id": "2",
-	        "name": "Austria"
-	    }, {
-	        "id": "3",
-	        "name": "Bahrain"
-	    }, {
-	        "id": "4",
-	        "name": "Bangladesh"
-	    }, {
-	        "id": "5",
-	        "name": "Belgium"
-	    }];
-	})
+.controller('AppController', function($scope) {
+    $scope.add = function(a, b) {
+        return parseInt(a) + parseInt(b);
+    };
+})
 
-	.directive('dateNow', function($filter) {
-	    return {
-	        link: function($scope, $element, $attrs) {
-	            $element.text($filter('date')(new Date(), $attrs.dateNow));
-	        }
-	    };
-	});
+.service('AppService', function() {
+    return [{
+        "id": "1",
+        "name": "Australia"
+    }, {
+        "id": "2",
+        "name": "Austria"
+    }, {
+        "id": "3",
+        "name": "Bahrain"
+    }, {
+        "id": "4",
+        "name": "Bangladesh"
+    }, {
+        "id": "5",
+        "name": "Belgium"
+    }];
+})
+
+.directive('dateNow', function($filter) {
+    return {
+        link: function($scope, $element, $attrs) {
+            $element.text($filter('date')(new Date(), $attrs.dateNow));
+        }
+    };
+});
